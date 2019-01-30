@@ -18,7 +18,14 @@ def sum array
 end
 
 def max_2_sum arr
-  sum(arr.sort.last(2))
+  len=arr.length
+  if len==0
+    return 0
+  elsif len==1
+    return arr[0]
+  else
+    sum(arr.sort.last(2))
+  end
 end
 
 def sum_to_n? arr, n
